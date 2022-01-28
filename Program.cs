@@ -12,8 +12,10 @@ namespace RPG___POO
     {
         static void Main(string[] args)
         {
-            Hero hero = new Hero("Gojo",99,"Feiticeiro");
-            Console.WriteLine(hero);
+            Hero hero = new Hero("Gojo", 99, "Feiticeiro");
+            Wizard wizard = new Wizard("Itadori", 25, "Feiticeiro");
+            Console.WriteLine(wizard.Attack());
+            Console.WriteLine(wizard.Attack("Lobo Cinzento", 2));
 
             Console.ReadLine();
         }
